@@ -4,10 +4,12 @@ export default class Calculation {
     }
 
     calculate() {
-        // mathematical operators
         let operators = [
            {'*': (a, b) => a * b, '/': (a, b) => a / b},
            {'+': (a, b) => a + b, '-': (a, b) => a - b}],
+
+
+
         expressionLength,
         currentOperator,
         calculateVal = [],
@@ -18,7 +20,6 @@ export default class Calculation {
         expressionLength = input.length
 
         if (input) {
-            // calculates given input
             for (let i = 0; i < operatorLength; i++) {
                 for (let j = 0; j < expressionLength; j++) {
                     if (operators[i][input[j]]) {
@@ -38,8 +39,6 @@ export default class Calculation {
         }
         return false;
     }
-
-    // verify input format is correct or malformed
     verifyInput () {
         let current = '',
             input = []

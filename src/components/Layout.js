@@ -2,7 +2,6 @@ import React from "react";
 import Paragraph from "./Paragraph";
 import Calculation from "../logic/calculation";
 
-/** @namespace React.Component */
 export default class Layout extends React.Component {
     constructor(props) {
         super(props);
@@ -30,7 +29,6 @@ export default class Layout extends React.Component {
         let result = new Calculation(this.state.value).calculate();
         if (result !== false) {
 
-            // convert result separated by a space
             content = '';
             let expression = new Calculation(this.state.value).verifyInput(),
                 len = expression.length;

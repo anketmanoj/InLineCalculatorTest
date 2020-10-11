@@ -1,6 +1,6 @@
 import React from "react";
 
-/** @namespace React.Component */
+
 export default class Paragraph extends React.Component {
     render() {
         return (
